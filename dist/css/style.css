@@ -1,0 +1,34 @@
+body {
+  font-size: 10px;
+  display: flex;
+}
+
+span {
+  font-size: 20px;
+}
+
+div {
+  font-size: 30px;
+  background: url(../img/cover.jpg) no-repeat;
+}
+
+@media (max-width: 767px) {
+  span {
+    font-size: 15px;
+  }
+
+  div {
+    font-size: 20px;
+  }
+}
+@supports (-webkit-appearance:none){
+div{background:url(../img/cover.webp) no-repeat}
+}
+
+ @media (max-width: 767px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
