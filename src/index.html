@@ -3,14 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulp</title>
+    <title>Luxtrader</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.3.7/slick.css"/>
 </head>
 <body>
     @@include('_header.html')
-    <main class="main">
-        <img src="img/cover.jpg" alt="fon">
+    <main class="page">
+        <div class="main-slider">
+            <div class="main-slider__body slider">
+                <div class="main-slider__item item-main-slider">
+                    <div class="item-main-slider__content">
+                        <div class="item-main-slider__container _container">
+                            <div class="title">
+                                <div class="title__item">Только эксклюзивные</div>
+                                <div class="title__main title__main_white">Лоты под аукцион и свобоДную продажу</div>
+                                <div class="title__text">
+                                    Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный и автоматизированный сервис по покупке и продаже, а также выставлению лотов на аукцион, предоставляем личные кабинеты, а также оказываем сопутствубщие услуги с продажей редких и дорогих вещей
+                                </div>
+                                <a href="#" class="item-main-slider__btn btn"><span class="btn__body"><span>Присоединиться</span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-main-slider__bg _ibj">
+                        <img src="img/first-screen_bg.png" alt="slide 1">
+                    </div>
+                </div>
+                <div class="main-slider__item item-main-slider">
+                    <div class="item-main-slider__content">
+                        <div class="item-main-slider__container _container">
+                            <div class="title">
+                                <div class="title__item">Только эксклюзивные</div>
+                                <div class="title__main title__main_white">Лоты под аукцион и свобоДную продажу</div>
+                                <div class="title__text">
+                                   Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный и автоматизированный сервис по покупке и продаже, а также выставлению лотов на аукцион, предоставляем личные кабинеты, а также оказываем сопутствубщие услуги с продажей редких и дорогих вещей
+                                </div>
+                                <a href="#" class="item-main-slider__btn btn"><span class="btn__body"><span>Присоединится</span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-main-slider__bg _ibj">
+                        <img src="img/first-screen_bg.png" alt="slide 1">
+                    </div>
+                </div>
+            </div>
+            <div class="main-slider__control control-main-slider">
+                <div class="control-main-slider__arrow control-main-slider__arrow_prev">
+                    <!-- <img src="img/prev.jpg" alt="prev"> -->
+                </div>
+                <div class="control-main-slider__arrow_decor">
+                    <img src="img/nav.jpg" alt="navigation">
+                </div>
+                <div class="control-main-slider__arrow control-main-slider__arrow_next">
+                    <!-- <img src="img/next.jpg" alt="next"> -->
+                </div>
+            </div>
+        </div>
+        <section class="lots">
+            <div class="lots__container _container">
+                <div class="lots__header block-header">
+                    <div class="block-header__title title">
+                        <div class="title__item">Популярные</div>
+                        <h2 class="title__main">Лоты под аукцион</h2>
+                    </div>
+                    <div class="block-header__decor block-decor">
+                        <div class="block-decor__items">
+                            <span></span>
+                        </div>
+                        <div class="block-decor__icon">
+                            <img src="img/watchIcon.svg" alt="">
+                        </div>
+                        <div class="block-decor__items">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lots__slider slider-lots">
+                    <div class="slider-lots__body">
+                        <div class="product-slider">
+                            <div class="slider-lots__slide">
+                                <div class="lot">
+                                    <div class="lot__header">
+                                        <a href="#" class="lot__image">
+                                            <img src="img/product1.png" alt="product 1">
+                                        </a>
+        
+                                        <div class="lot__timer timer-lot">
+                                            <div class="timer-lot__icon">
+                                                <img src="img/timer.jpg" alt="timer">
+                                                <div class="timer-lot__item">3:21:45:37</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="lot__title">Arnold & Son Worldtimer </a>
+                                    <div class="lot__info info-lot">
+                                        <div class="info-lot__statislic">
+                                            <div class="info-lot__icon">
+                                                <img src="img/eye.svg" alt="">
+                                            </div>
+                                            <div class="info-lot__value">
+                                                1098
+                                            </div>
+                                        </div>
+                                        <div class="info-lot__current-bet current-bet-info-lot">
+                                            <div class="current-bet-info-lot__label">Текущая ставка</div>
+                                            <div class="current-bet-info-lot__value">18 999 203</div>
+                                            <div class="current-bet-info-lot__currency">₽</div>
+                                        </div>
+                                        <div class="info-lot__statislic">
+                                            <div class="info-lot__icon">
+                                                <img src="img/palm1.svg" alt="">
+                                            </div>
+                                            <div class="info-lot__value">
+                                                75
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="lot__btn btn"><span class="btn__body btn__stavka"><span>Поднять ставку</span></span></a>
+                                </div>
+                            </div>
+                            <div class="slider-lots__slide">
+                                <div class="lot">
+                                    <div class="lot__header">
+                                        <a href="#" class="lot__image">
+                                            <img src="img/product2.png" alt="product 1">
+                                        </a>
+        
+                                        <div class="lot__timer timer-lot">
+                                            <div class="timer-lot__icon">
+                                                <img src="img/timer.jpg" alt="timer">
+                                                <div class="timer-lot__item">3:21:45:37</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="lot__title">Chateau Lafite 1949 </a>
+                                    <div class="lot__info info-lot">
+                                        <div class="info-lot__statislic">
+                                            <div class="info-lot__icon">
+                                                <img src="img/eye.svg" alt="">
+                                            </div>
+                                            <div class="info-lot__value">
+                                                1098
+                                            </div>
+                                        </div>
+                                        <div class="info-lot__current-bet current-bet-info-lot">
+                                            <div class="current-bet-info-lot__label">Текущая ставка</div>
+                                            <div class="current-bet-info-lot__value">18 999 203</div>
+                                            <div class="current-bet-info-lot__currency">₽</div>
+                                        </div>
+                                        <div class="info-lot__statislic">
+                                            <div class="info-lot__icon">
+                                                <img src="img/palm1.svg" alt="">
+                                            </div>
+                                            <div class="info-lot__value">
+                                                75
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="lot__btn btn"><span class="btn__body btn__stavka"><span>Поднять ставку</span></span></a>
+                                </div>
+                            </div>
+                            <div class="slider-lots__slide">
+                                <div class="lot">
+                                    <div class="lot__header">
+                                        <a href="#" class="lot__image">
+                                            <img src="img/product3.png" alt="product 1">
+                                        </a>
+        
+                                        <div class="lot__timer timer-lot">
+                                            <div class="timer-lot__icon">
+                                                <img src="img/timer.jpg" alt="timer">
+                                                <div class="timer-lot__item">3:21:45:37</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="lot__title">Rolex Paul Newman  Daytona</a>
+                                    <div class="lot__info info-lot">
+                                        <div class="info-lot__statislic">
+                                            <div class="info-lot__icon">
+                                                <img src="img/eye.svg" alt="">
+                                            </div>
+                                            <div class="info-lot__value">
+                                                1098
+                                            </div>
+                                        </div>
+                                        <div class="info-lot__current-bet current-bet-info-lot">
+                                            <div class="current-bet-info-lot__label">Текущая ставка</div>
+                                            <div class="current-bet-info-lot__value">205 050</div>
+                                            <div class="current-bet-info-lot__currency">₽</div>
+                                        </div>
+                                        <div class="info-lot__statislic">
+                                            <div class="info-lot__icon">
+                                                <img src="img/palm1.svg" alt="">
+                                            </div>
+                                            <div class="info-lot__value">
+                                                75
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="lot__btn btn"><span class="btn__body btn__stavka"><span>Поднять ставку</span></span></a>
+                                </div>
+                            </div>
+                            <div class="slider-lots__slide">
+                                <div class="lot">
+                                    <div class="lot__header">
+                                        <a href="#" class="lot__image">
+                                            <img src="img/product1.png" alt="product 1">
+                                        </a>
+        
+                                        <div class="lot__timer timer-lot">
+                                            <div class="timer-lot__icon">
+                                                <img src="img/timer.jpg" alt="timer">
+                                                <div class="timer-lot__item">3:21:45:37</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="lot__title">Arnold & Son Worldtimer </a>
+                                    <div class="lot__info info-lot">
+                                        <div class="info-lot__statislic">
+                                            <div class="info-lot__icon">
+                                                <img src="img/eye.svg" alt="">
+                                            </div>
+                                            <div class="info-lot__value">
+                                                1098
+                                            </div>
+                                        </div>
+                                        <div class="info-lot__current-bet current-bet-info-lot">
+                                            <div class="current-bet-info-lot__label">Текущая ставка</div>
+                                            <div class="current-bet-info-lot__value">18 999 203</div>
+                                            <div class="current-bet-info-lot__currency">₽</div>
+                                        </div>
+                                        <div class="info-lot__statislic">
+                                            <div class="info-lot__icon">
+                                                <img src="img/palm1.svg" alt="">
+                                            </div>
+                                            <div class="info-lot__value">
+                                                75
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="lot__btn btn"><span class="btn__body btn__stavka"><span>Поднять ставку</span></span></a>
+                                </div>
+                            </div>
+                            <div class="slider-lots__slide">
+                                <div class="lot">
+                                    <div class="lot__header">
+                                        <a href="#" class="lot__image">
+                                            <img src="img/product1.png" alt="product 1">
+                                        </a>
+        
+                                        <div class="lot__timer timer-lot">
+                                            <div class="timer-lot__icon">
+                                                <img src="img/timer.jpg" alt="timer">
+                                                <div class="timer-lot__item">3:21:45:37</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="lot__title">Arnold & Son Worldtimer </a>
+                                    <div class="lot__info info-lot">
+                                        <div class="info-lot__statislic">
+                                            <div class="info-lot__icon">
+                                                <img src="img/eye.svg" alt="">
+                                            </div>
+                                            <div class="info-lot__value">
+                                                1098
+                                            </div>
+                                        </div>
+                                        <div class="info-lot__current-bet current-bet-info-lot">
+                                            <div class="current-bet-info-lot__label">Текущая ставка</div>
+                                            <div class="current-bet-info-lot__value">18 999 203</div>
+                                            <div class="current-bet-info-lot__currency">₽</div>
+                                        </div>
+                                        <div class="info-lot__statislic">
+                                            <div class="info-lot__icon">
+                                                <img src="img/palm1.svg" alt="">
+                                            </div>
+                                            <div class="info-lot__value">
+                                                75
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="lot__btn btn"><span class="btn__body btn__stavka"><span>Поднять ставку</span></span></a>
+                                </div>
+                            </div>
+                            <div class="slider-lots__slide">
+                                <div class="lot">
+                                    <div class="lot__header">
+                                        <a href="#" class="lot__image">
+                                            <img src="img/product1.png" alt="product 1">
+                                        </a>
+        
+                                        <div class="lot__timer timer-lot">
+                                            <div class="timer-lot__icon">
+                                                <img src="img/timer.jpg" alt="timer">
+                                                <div class="timer-lot__item">3:21:45:37</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="lot__title">Arnold & Son Worldtimer </a>
+                                    <div class="lot__info info-lot">
+                                        <div class="info-lot__statislic">
+                                            <div class="info-lot__icon">
+                                                <img src="img/eye.svg" alt="">
+                                            </div>
+                                            <div class="info-lot__value">
+                                                1098
+                                            </div>
+                                        </div>
+                                        <div class="info-lot__current-bet current-bet-info-lot">
+                                            <div class="current-bet-info-lot__label">Текущая ставка</div>
+                                            <div class="current-bet-info-lot__value">18 999 203</div>
+                                            <div class="current-bet-info-lot__currency">₽</div>
+                                        </div>
+                                        <div class="info-lot__statislic">
+                                            <div class="info-lot__icon">
+                                                <img src="img/palm1.svg" alt="">
+                                            </div>
+                                            <div class="info-lot__value">
+                                                75
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="lot__btn btn"><span class="btn__body btn__stavka"><span>Поднять ставку</span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-lots__control control-slider-lots">
+                            <div class="control-slider-lots__arrow"> </div>
+                            <a href="#" class="control-slider-lots__link">Все лоты</a>
+                            <div class="control-slider-lots__arrow"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.3.7/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
